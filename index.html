@@ -585,18 +585,22 @@ footer span{color:var(--g);}
         <span class="tl tw">Hamza Shaukat</span>
         <span class="tl">&nbsp;</span>
         <span class="tl"><span class="tg">$</span> <span class="tc">cat about.txt</span></span>
-        <span class="tl td2">  Dedicated BS Cybersecurity student with a</span>
-        <span class="tl td2">  solid academic foundation and practical</span>
-        <span class="tl td2">  experience in vulnerability assessment,</span>
-        <span class="tl td2">  reverse engineering, and network traffic</span>
-        <span class="tl td2">  analysis. Passionate about securing systems</span>
-        <span class="tl td2">  through ethical practices.</span>
+        <span class="tl td2">  BS Cybersecurity Student · COMSATS University</span>
+        <span class="tl td2">  Islamabad (CGPA 3.49/4.00). Hands-on expertise</span>
+        <span class="tl td2">  in vulnerability assessment, penetration testing,</span>
+        <span class="tl td2">  reverse engineering, digital forensics, and network</span>
+        <span class="tl td2">  traffic analysis. Built Vulcan — a production-grade</span>
+        <span class="tl td2">  AI-powered SAST engine with interprocedural taint</span>
+        <span class="tl td2">  analysis, CPG construction, and LLM-assisted FP</span>
+        <span class="tl td2">  reduction. Certified in Red Team Ops &amp; Bug Bounty.</span>
+        <span class="tl td2">  Targeting roles in offensive security, threat</span>
+        <span class="tl td2">  detection, or security engineering.</span>
         <span class="tl">&nbsp;</span>
         <span class="tl"><span class="tg">$</span> <span class="tc">cat interests.json</span></span>
-        <span class="tl"><span class="tp">▸</span> Threat Detection &amp; Malware Analysis</span>
+        <span class="tl"><span class="tp">▸</span> Offensive Security &amp; Penetration Testing</span>
+        <span class="tl"><span class="tp">▸</span> SAST / Security Tooling Development</span>
         <span class="tl"><span class="tp">▸</span> Digital Forensics (Windows &amp; Linux)</span>
-        <span class="tl"><span class="tp">▸</span> Web Penetration Testing</span>
-        <span class="tl"><span class="tp">▸</span> PCAP Analysis · IOC / IOA Identification</span>
+        <span class="tl"><span class="tp">▸</span> Threat Detection &amp; Malware Analysis</span>
         <span class="tl">&nbsp;</span>
         <span class="tl"><span class="tg">$</span> <span class="tc">echo $STATUS</span></span>
         <span class="tl tg">Open to opportunities ✓</span>
@@ -606,7 +610,7 @@ footer span{color:var(--g);}
     <div class="stats-grid">
       <div class="stat-card reveal" style="transition-delay:.08s"><span class="stat-n count-up" data-val="3.49" data-dec="2">3.49</span><span class="stat-l">CGPA / 4.0</span></div>
       <div class="stat-card reveal" style="transition-delay:.16s"><span class="stat-n">6+</span><span class="stat-l">Certs &amp; Awards</span></div>
-      <div class="stat-card reveal" style="transition-delay:.24s"><span class="stat-n">4+</span><span class="stat-l">Projects</span></div>
+      <div class="stat-card reveal" style="transition-delay:.24s"><span class="stat-n">10+</span><span class="stat-l">Projects</span></div>
       <div class="stat-card reveal" style="transition-delay:.32s"><span class="stat-n">10th</span><span class="stat-l">National CTF</span></div>
       <div class="stat-card reveal" style="transition-delay:.40s"><span class="stat-n">1st</span><span class="stat-l">Comstech CTF</span></div>
     </div>
@@ -757,6 +761,37 @@ footer span{color:var(--g);}
     <h2 class="sec-title scramble" data-text="Operations">Operations</h2>
   </div>
   <div class="proj-grid">
+    <!-- FEATURED FYP -->
+    <div class="proj-card tilt-card reveal" style="transition-delay:.00s;grid-column:1/-1;border-color:var(--c);box-shadow:0 0 40px rgba(0,255,136,0.12),inset 0 0 40px rgba(0,255,136,0.03);position:relative;overflow:hidden">
+      <!-- header row -->
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:1.1rem;flex-wrap:wrap">
+        <!-- logo mark -->
+        <div style="display:flex;align-items:center;gap:.75rem">
+          <div style="width:52px;height:52px;border:1.5px solid var(--c);border-radius:50%;overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:#0d0d0d">
+            <img src="logo.jpg" alt="Vulcan Logo" style="width:100%;height:100%;object-fit:cover">
+          </div>
+          <div>
+            <div style="font-family:monospace;font-weight:700;font-size:1rem;letter-spacing:.18em;color:var(--c);line-height:1">VULCAN</div>
+            <div style="font-size:.65rem;color:var(--dim);letter-spacing:.08em;margin-top:.2rem">SAST ENGINE</div>
+          </div>
+        </div>
+        <!-- badge + number -->
+        <div style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap">
+          <span style="background:linear-gradient(90deg,var(--c),var(--p));color:#000;font-size:.6rem;font-weight:700;letter-spacing:.12em;padding:.22rem .6rem;border-radius:3px">FINAL YEAR PROJECT</span>
+          <span class="proj-num" style="color:var(--c);position:static;margin:0;line-height:1">00</span>
+        </div>
+      </div>
+      <h3 class="proj-name" style="color:var(--c);margin-bottom:.9rem">Vulcan — AI-Augmented Static Application Security Testing Engine</h3>
+      <ul style="margin:0 0 1rem 0;padding-left:1.1rem;display:grid;gap:.45rem;color:var(--fg);font-size:.88rem;line-height:1.6">
+        <li><strong>CPG Pipeline</strong> — 3-pass architecture (<code>CPGParser</code> → <code>InterproceduralDFG</code> → <code>SemanticGraphEnricher</code>) composing 9 graph families (AST/CFG/DFG/Call/Taint/Auth/HTTP-API/Module/DB) over a shared node-edge schema; O(1) ancestor lookup via <code>AST_CHILD</code> adjacency maps</li>
+        <li><strong>Taint Engine</strong> — <code>TAINT_SOURCE/SINK</code> marking + <code>SANITIZED</code> edge injection on intercepting DFG paths; <code>PathDiscovery</code> scores source→sink candidates with depth-limited search and <code>QueryExecutor</code> dedup; DFG models closures, callbacks, tuple unpacking, uncertain flows via typed <code>DFGEdgeType</code> variants; validated on 82+ CWE-annotated CodeQL benchmarks (Python + JS)</li>
+        <li><strong>Multi-File / XSS</strong> — <code>MultiFileRepositoryGraph</code> builds per-file CPGs in parallel; linker resolves <code>IMPORTS / CALL_GRAPH / DFG_PARAM_PASS</code> cross-module; HTML→backend linker emits <code>HTTP_FLOW</code> edges (form → route) for end-to-end XSS taint paths</li>
+        <li><strong>LLM Layer</strong> — 13-model fallback chain (OpenAI / Anthropic / GitHub Copilot) classifies code slices with taint context → <code>VULNERABLE / LIKELY_VULNERABLE / NOT_VULNERABLE</code> + severity + exploitability; parallel PoC generation for Critical + top-5 High with per-finding provider reset</li>
+        <li><strong>Delivery</strong> — FastAPI + WebSocket real-time streaming, SARIF 2.1.0, CVSS v3.1, Kill Chain viz, PDF reports; single-file (<code>analyze_code</code>) and repo-wide (<code>analyze_repository</code>) modes</li>
+      </ul>
+      <div class="proj-tags"><span class="proj-tag" style="border-color:var(--c);color:var(--c)">Python</span><span class="proj-tag" style="border-color:var(--c);color:var(--c)">Tree-sitter</span><span class="proj-tag" style="border-color:var(--c);color:var(--c)">FastAPI</span><span class="proj-tag" style="border-color:var(--c);color:var(--c)">NetworkX</span><span class="proj-tag" style="border-color:var(--c);color:var(--c)">LLM APIs</span><span class="proj-tag">9-Family CPG</span><span class="proj-tag">Interprocedural Taint</span><span class="proj-tag">82+ CWE Benchmarks</span><span class="proj-tag">SARIF 2.1.0</span><span class="proj-tag">CVSS v3.1</span><span class="proj-tag">OWASP Top 10</span></div>
+      <span class="proj-arrow" style="color:var(--c)">→</span>
+    </div>
     <div class="proj-card tilt-card reveal" style="transition-delay:.04s">
       <span class="proj-num">01</span>
       <span class="proj-ico"><i class="fa-solid fa-magnifying-glass-chart"></i></span>
